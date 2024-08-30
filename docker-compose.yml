@@ -9,6 +9,8 @@ services:
       POSTGRES_DB: mydatabase
     ports:
       - "5432:5432"
+    networks:
+      - app-network
 
   backend:
     build:
@@ -17,3 +19,9 @@ services:
       - "3000:3000"
     depends_on:
       - database
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

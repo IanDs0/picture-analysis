@@ -1,0 +1,12 @@
+# Postgresql
+DB_HOST=database
+DB_PORT=5432
+DB_USER=user
+DB_PASSWORD=password
+DB_NAME=mydatabase
+
+# Gemini
+GEMINI_API_KEY=
+
+# Url
+BASE_URL=http://localhost:3000
